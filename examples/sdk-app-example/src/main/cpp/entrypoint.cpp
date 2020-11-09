@@ -26,7 +26,8 @@ JNIEXPORT void JNICALL Java_com_bugsnag_android_example_ExampleApplication_perfo
 
 
 JNIEXPORT void JNICALL Java_com_bugsnag_android_example_ExampleActivity_doCrash(JNIEnv *env, jobject instance) {
-    crash_write_read_only();
+  for(;;);
+//    crash_write_read_only();
 }
 
 JNIEXPORT void JNICALL Java_com_bugsnag_android_example_ExampleActivity_notifyFromCXX(JNIEnv *env, jobject instance) {
